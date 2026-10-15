@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les bienfaits de la lecture quotidienne pour les lycéens : concentration, réussite scolaire et détente.">
+    <title>Lire chaque jour – La lecture quotidienne pour les lycéens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="header-top">
+            <p class="brand">Lire chaque jour</p>
+            <button id="theme-toggle" type="button" aria-label="Changer de thème clair/sombre">🌙 Mode sombre</button>
+        </div>
+
+        <div class="hero">
+            <h1>Lire chaque jour</h1>
+            <p class="slogan">20 minutes par jour, un lycée plus facile.</p>
+            <p class="hero-links">
+                <a class="cta" href="#defi">Relever le défi</a>
+                <a class="cta ghost" href="#quiz">Faire le quiz</a>
+            </p>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#defi">Défi 7 jours</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#medias">Vidéo &amp; audio</a></li>
+                <li><a href="#pourquoi">Pourquoi / Comment</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="conseils.html">Conseils</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu">
+
+        <section id="presentation" class="section">
+            <h2>Présentation</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Le thème</h3>
+                    <p>Les bienfaits de la lecture quotidienne : mieux se concentrer, enrichir son vocabulaire et réduire son stress.</p>
+                </article>
+                <article class="card">
+                    <h3>Le public</h3>
+                    <p>Les lycéens de 15 à 18 ans, souvent pris par les écrans et les devoirs.</p>
+                </article>
+                <article class="card">
+                    <h3>L'objectif</h3>
+                    <p>Donner envie d'adopter une habitude simple : lire 20 minutes par jour.</p>
+                </article>
+            </div>
+
+            <div class="counter-box">
+                <p>Pages lues par la classe aujourd'hui :</p>
+                <p class="counter" id="counter-value" aria-live="polite">0</p>
+                <button type="button" id="counter-add">+ 10 pages</button>
+                <button type="button" id="counter-reset" class="secondary">Remettre à zéro</button>
+            </div>
+        </section>
+
+        <section id="defi" class="section">
+            <h2>Défi des 7 jours</h2>
+            <p>Cochez chaque jour où vous avez lu 20 minutes. Votre progression est enregistrée dans ce navigateur.</p>
+            <div class="days" role="group" aria-label="Jours de lecture">
+                <label class="day"><input type="checkbox"><span>Lun</span></label>
+                <label class="day"><input type="checkbox"><span>Mar</span></label>
+                <label class="day"><input type="checkbox"><span>Mer</span></label>
+                <label class="day"><input type="checkbox"><span>Jeu</span></label>
+                <label class="day"><input type="checkbox"><span>Ven</span></label>
+                <label class="day"><input type="checkbox"><span>Sam</span></label>
+                <label class="day"><input type="checkbox"><span>Dim</span></label>
+            </div>
+            <div class="progress" aria-hidden="true"><div class="bar" id="progress-bar"></div></div>
+            <p class="progress-text" id="progress-text" aria-live="polite">0 / 7 jours</p>
+        </section>
+
+        <section id="galerie" class="section">
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <button type="button" id="prev" aria-label="Image précédente">&#10094;</button>
+                <figure>
+                    <img id="gallery-img" src="images/image1.svg" alt="Un livre ouvert posé sur une table">
+                    <figcaption id="gallery-caption">Un livre ouvert, le début d'une pause calme.</figcaption>
+                </figure>
+                <button type="button" id="next" aria-label="Image suivante">&#10095;</button>
+            </div>
+            <p class="gallery-count" id="gallery-count">Image 1 / 3</p>
+            <div class="thumbs">
+                <button type="button" class="thumb active" data-index="0" aria-label="Afficher l'image 1"><img src="images/image1.svg" alt="Miniature : un livre ouvert"></button>
+                <button type="button" class="thumb" data-index="1" aria-label="Afficher l'image 2"><img src="images/image2.svg" alt="Miniature : une pile de livres"></button>
+                <button type="button" class="thumb" data-index="2" aria-label="Afficher l'image 3"><img src="images/image3.svg" alt="Miniature : un lycéen qui lit sous un arbre"></button>
+            </div>
+        </section>
+
+        <section id="medias" class="section">
+            <h2>Vidéo et audio</h2>
+            <div class="media-grid">
+                <div>
+                    <h3>Vidéo d'exemple</h3>
+                    <video controls preload="metadata" poster="images/image1.svg">
+                        <source src="https://youtu.be/vYBNfIH2Qbo?si=8jTF69Nx9Xrqbu8I" type="video/mp4">
+                        Votre navigateur ne gère pas la balise vidéo.
+                    </video>
+                </div>
+                <div>
+                    <h3>Ambiance sonore pour lire</h3>
+                    <audio controls preload="metadata">
+                        <source src="audio/ambiance.wav" type="audio/wav">
+                        Votre navigateur ne gère pas la balise audio.
+                    </audio>
+                    <p class="note">Une courte mélodie calme à écouter pendant la lecture.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pourquoi" class="section">
+            <h2>Pourquoi / Comment ?</h2>
+            <p>Comment présenter la lecture de façon claire, attrayante et interactive ? En montrant trois arguments concrets (cliquez pour afficher le détail).</p>
+
+            <div class="filters">
+                <button type="button" class="filter active" data-filter="tous">Tous</button>
+                <button type="button" class="filter" data-filter="cerveau">Cerveau</button>
+                <button type="button" class="filter" data-filter="ecole">École</button>
+                <button type="button" class="filter" data-filter="bien-etre">Bien-être</button>
+            </div>
+
+            <div class="accordion">
+                <article class="item" data-cat="cerveau">
+                    <button type="button" class="item-title" aria-expanded="false">1. Mieux se concentrer</button>
+                    <div class="item-body" hidden>
+                        <p>Lire demande une attention longue : c'est un entraînement pour rester concentré en cours et pendant les révisions.</p>
+                    </div>
+                </article>
+                <article class="item" data-cat="ecole">
+                    <button type="button" class="item-title" aria-expanded="false">2. Réussir à l'école</button>
+                    <div class="item-body" hidden>
+                        <p>Un vocabulaire riche et une meilleure orthographe aident dans toutes les matières, pas seulement en français.</p>
+                    </div>
+                </article>
+                <article class="item" data-cat="bien-etre">
+                    <button type="button" class="item-title" aria-expanded="false">3. Se détendre</button>
+                    <div class="item-body" hidden>
+                        <p>Quelques minutes de lecture avant de dormir calment l'esprit et aident à mieux s'endormir.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="quiz" class="section">
+            <h2>Quiz : êtes-vous prêt à lire ?</h2>
+            <form id="quiz-form" novalidate>
+                <fieldset>
+                    <legend>Combien de minutes par jour suffisent pour commencer ?</legend>
+                    <label><input type="radio" name="q1" value="a"> 5 heures</label>
+                    <label><input type="radio" name="q1" value="b"> 20 minutes</label>
+                    <label><input type="radio" name="q1" value="c"> 2 minutes par semaine</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Quel moment aide à mieux s'endormir ?</legend>
+                    <label><input type="radio" name="q2" value="a"> Lire un peu avant de dormir</label>
+                    <label><input type="radio" name="q2" value="b"> Regarder son téléphone au lit</label>
+                    <label><input type="radio" name="q2" value="c"> Faire ses devoirs à minuit</label>
+                </fieldset>
+                <label for="prenom" class="inline-label">Votre prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Ex. Sara">
+                <button type="submit">Valider</button>
+            </form>
+            <p id="quiz-result" class="quiz-result" role="status"></p>
+        </section>
+
+    </main>
+
+    <button type="button" id="top-btn" class="top-btn" aria-label="Retour en haut" hidden>&#8593;</button>
+
+    <footer class="site-footer">
+        <p>Site réalisé par <strong>Prénom NOM</strong> – Projet hypermédia – 15 octobre 2026</p>
+        <p class="sources">Sources : images et illustrations créées par l'auteur (SVG) ; audio généré par l'auteur ; vidéo créée par l'auteur. Autres médias possibles : <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>, <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
